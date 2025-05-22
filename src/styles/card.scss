@@ -1,0 +1,27 @@
+.card {
+  width: 100%;
+  max-width: 450px;
+  height: 300px;
+  background-color: #ff6060;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  .card-overlay {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
