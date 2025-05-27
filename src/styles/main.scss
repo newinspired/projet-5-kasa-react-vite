@@ -1,6 +1,5 @@
 $background-color-card : #f6f6f6;
-
-
+$main-color: #ff6060;
 
 body {
   font-family: Arial, sans-serif;
@@ -72,12 +71,21 @@ header nav a:hover{
   font-size: 40px;
 }
 
-.error-link{
+.error-button {
   display: flex;
   justify-content: center;
-  padding : 50px 0px 150px 0px;
-  color : black;
+  align-items: center;
+  margin: 50px auto 150px auto;
   font-size: 20px;
+  color: black;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 /*------------ABOUT-PAGE-----------------------------*/
@@ -88,6 +96,7 @@ header nav a:hover{
   height: 225px;
   overflow: hidden;
   border-radius: 25px;
+  margin-bottom: 20px;
 }
 
   .banner-image-about {
@@ -117,4 +126,42 @@ footer{
 
 }
 
+/*------------Collapse-About----------------------------*/
 
+.about-collapses {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+
+  .collapse {
+    width: 100%;
+
+    .collapse-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $main-color;
+      color: white;
+      padding: 5px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .collapse-content {
+      background-color: #f6f6f6;
+      border-radius: 0 0 10px 10px;
+      padding: 20px;
+      font-size: 14px;
+      color: #333;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
