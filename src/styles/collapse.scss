@@ -1,0 +1,38 @@
+$main-color : #ff6060;
+
+.logement-collapses {
+    display: flex;
+    margin-top: 30px;
+    gap : 50px;
+    
+    @media (max-width: 900px) {
+    flex-direction: column;  
+    gap: 20px;               
+
+    .collapse-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $main-color;
+        color: white;
+        padding: 5px 50px;
+        border-radius: 10px;
+        width: 80%;
+    }
+    }
+
+    .collapse {
+        width: 50%;
+    
+    .collapse-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $main-color;
+        color : white;
+        padding: 0px 50px;
+        border-radius : 10px;
+        }
+    }
+
+}

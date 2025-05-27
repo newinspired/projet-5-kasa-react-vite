@@ -1,0 +1,140 @@
+$main-color : #ff6060;
+$main-font : "Montserrat" ;
+$arrow-size: 40px;
+
+.logement-container {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  .cover{
+    .logement-cover {
+      width: 100%;
+      max-height: 415px;
+      object-fit: cover;
+      border-radius: 25px;
+      margin-bottom: 20px;
+    }
+  }
+  h2{
+    color  : $main-color;
+    font-family: $main-font;
+    font-weight : 500px;
+    font-size : 36px;
+  }
+
+  h3{
+    font-family: $main-font;
+    color : black;
+    font-weight: normal;
+  }
+
+  .logement-tags {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  .tag {
+    display: inline-block;
+    background-color: $main-color;
+    color: white;
+    padding: 6px 40px;
+    border-radius: 25px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 375px) {
+    gap: 10px;
+    padding: 0;
+
+    .tag {
+      padding: 6px 20px;
+    }
+  }
+}
+
+}
+
+/*------------Caroussel---------------*/
+
+
+.logement-container {
+  padding: 20px;
+
+  .cover {
+    position: relative;
+    margin-bottom: 30px;
+
+    .back-arrow {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 24px;
+      color: $main-color;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-height: 500px;
+      overflow: hidden;
+      border-radius: 10px;
+
+      .logement-cover {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+      }
+
+      .carousel-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: $arrow-size;
+        color: white;
+        
+        padding: 10px;
+        
+        cursor: pointer;
+        z-index: 5;
+
+        &.left {
+          left: 15px;
+        }
+
+        &.right {
+          right: 15px;
+        }
+      }
+
+      .image-counter {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 16px;
+       
+        padding-bottom: 30px;
+        
+      }
+    }
+  }
+
+  h2 {
+    margin: 10px 0 5px;
+    font-size: 28px;
+  }
+
+  .logement-location {
+    margin-bottom: 15px;
+    color: gray;
+  }
+
+}
+
+

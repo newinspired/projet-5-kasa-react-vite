@@ -1,22 +1,4 @@
-export function SayHello(){
-    return (
-    <div>
-        <h1>Hello World</h1>
-        <p>Bonjour à tous</p>
-    </div>
-    )
-}
 
-export function DiceHola(){
-    return (
-    <div>
-        <h1>Hola !</h1>
-        <p>Hola a todos</p>
-    </div>
-    )
-}
-
-{/*----------------------------HEADER----------------------------------*/}
 
 import { Link } from 'react-router-dom';
 import logoImage from '../assets/logo.svg';

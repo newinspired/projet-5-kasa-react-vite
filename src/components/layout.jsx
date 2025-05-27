@@ -5,11 +5,9 @@ import { Outlet } from 'react-router-dom';
 export default function Layout() {
   return (
     <>
-      <Header />
       <main>
-        <Outlet /> {/* 👈 C'est ici que les pages (Home, About, 404...) s'affichent */}
+        <Outlet />
       </main>
-      <Footer />
     </>
   );
 }
