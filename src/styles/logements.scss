@@ -19,8 +19,13 @@ $arrow-size: 40px;
   h2{
     color  : $main-color;
     font-family: $main-font;
-    font-weight : 500px;
     font-size : 36px;
+    line-height: 100%;
+    margin-top : 0px;
+
+    @media (max-width: 480px) {
+      font-size : 28px;
+    }
   }
 
   h3{
@@ -125,10 +130,6 @@ $arrow-size: 40px;
     }
   }
 
-  h2 {
-    margin: 10px 0 5px;
-    font-size: 28px;
-  }
 
   .logement-location {
     margin-bottom: 15px;
@@ -137,4 +138,45 @@ $arrow-size: 40px;
 
 }
 
+/*------------Description-Image-Logement-------------*/
 
+.ContainerDescriptionImageLogement{
+  display: flex;
+  justify-content: space-between;
+
+  .NameAndPictureLogement{
+    display: flex;
+
+    .host-name{
+      color :$main-color;
+      padding-top: 10px;
+    }
+
+    .host-picture{
+      border-radius : 50%;
+      width : 64px;
+      margin: 0px 0px 38px 15px;
+    }
+  }
+
+  .logement-rating{
+    color :$main-color;
+    display: flex;
+    gap : 8px;
+  }
+
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ContainerDescriptionImageLogementPartTwo{
+
+    @media (max-width: 480px) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction : row-reverse;
+      margin-top: 20px;
+  }
+  }
+}

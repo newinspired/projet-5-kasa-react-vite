@@ -1,0 +1,15 @@
+
+
+
+main.jsx permet 3 choses :
+
+- Insère ton app dans la balise <div id="root"> du fichier 
+index.html.
+
+- Permet d’utiliser la navigation par URL (<Route>, 
+useParams(), etc.).
+
+- Charge ton fichier SCSS principal pour appliquer les styles 
+à l’ensemble de l’app.
+
+

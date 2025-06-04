@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import '../styles/main.scss';
+import '../styles/error404.scss';
 
 export default function Error404() {
   const navigate = useNavigate();

@@ -1,38 +1,64 @@
 $main-color : #ff6060;
 
-.logement-collapses {
+
+.collapse {
+width: 100%;
+
+.collapse-header {
     display: flex;
-    margin-top: 30px;
-    gap : 50px;
-    
-    @media (max-width: 900px) {
-    flex-direction: column;  
-    gap: 20px;               
+    align-items: center;
+    justify-content: space-between;
+    background-color: $main-color;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
 
-    .collapse-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: $main-color;
-        color: white;
-        padding: 5px 50px;
-        border-radius: 10px;
-        width: 80%;
-    }
-    }
+.collapse-content {
+    background-color: #f6f6f6;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    font-size: 14px;
+    color: #333;
 
-    .collapse {
-        width: 50%;
-    
-    .collapse-header{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: $main-color;
-        color : white;
-        padding: 0px 50px;
-        border-radius : 10px;
-        }
+    p {
+    margin: 0;
     }
+}
+}
 
+
+.about-collapses {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+.logement-collapse{
+    display: flex; 
+    margin-top: 20px; 
+    gap : 20px;
+
+    @media (max-width: 480px) {
+      margin-top : 0px;
+      display: flex;
+      flex-direction : column;
+  }
+}
+
+//------------Animation---------------
+
+
+.collapse-icon {
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
 }

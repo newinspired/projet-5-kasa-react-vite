@@ -11,7 +11,10 @@ export default function Collapse({ title, content }) {
       <div className="collapse-header" onClick={() => setIsOpen(!isOpen)}>
         <h4>{title}</h4>
         <span>
-          <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} />
+          <FontAwesomeIcon
+            icon={faChevronDown}
+            className={`collapse-icon ${isOpen ? '' : 'rotate'}`}
+          />
         </span>
       </div>
       {isOpen && (

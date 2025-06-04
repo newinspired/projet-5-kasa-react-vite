@@ -1,34 +1,44 @@
-import React from 'react';
 import bannerImageAbout from '../assets/image-about.jpg';
 import Collapse from '../components/collapse';
 import '../styles/main.scss';
+import '../styles/collapse.scss'
+import Banner from '../components/banner.jsx'
 
 export default function About() {
   return (
     <div className="about-container">
-      <div className="banner-about">
-        <img
-          src={bannerImageAbout}
-          className="banner-image-about"
-          alt="bannière à propos du site Kasa"
-        />
-      </div>
+      
+      <Banner 
+        title="" 
+        src={bannerImageAbout} 
+        alt="bannière À propos de Kasa" 
+      />
+
+
+
+
+
+
+
+
+
+
       <div className="about-collapses">
         <Collapse
           title="Fiabilité"
-          content="Climatisation Wi-Fi Cuisine Espace de travail Fer à repasser Sèche-cheveux Cintres"
+          content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
         />
         <Collapse
           title="Respect"
-          content="Climatisation Wi-Fi Cuisine Espace de travail Fer à repasser Sèche-cheveux Cintres"
+          content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
         />
         <Collapse
           title="Service"
-          content="Climatisation Wi-Fi Cuisine Espace de travail Fer à repasser Sèche-cheveux Cintres"
+          content="La qualité du service est au cœur de notre engagement chez Kasa. Nous veillons à ce que chaque interaction, que ce soit avec nos hôtes ou nos locataires, soit empreinte de respect et de bienveillance."
         />
         <Collapse
           title="Sécurité"
-          content="Climatisation Wi-Fi Cuisine Espace de travail Fer à repasser Sèche-cheveux Cintres"
+          content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l’hôte qu’au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
         />
       </div>
     </div>
