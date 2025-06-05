@@ -23,7 +23,7 @@ $arrow-size: 40px;
     line-height: 100%;
     margin-top : 0px;
 
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
       font-size : 28px;
     }
   }
@@ -165,14 +165,14 @@ $arrow-size: 40px;
     gap : 8px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
   }
 
   .ContainerDescriptionImageLogementPartTwo{
 
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
       display: flex;
       justify-content: space-between;
       flex-direction : row-reverse;

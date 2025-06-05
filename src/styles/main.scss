@@ -21,10 +21,12 @@ body {
   border-radius : 25px;
 
   
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     grid-template-columns: none;
   }
 }
+
+
 
 
 

@@ -19,7 +19,8 @@ export default function Collapse({ title, content }) {
       </div>
       {isOpen && (
         <div className="collapse-content">
-          {Array.isArray(content) ? (
+          {Array.isArray(content) ? ( //méthode qui permet de vérifier si une valeur est un tableau
+          console.log(content), 
             <ul>
               {content.map((item, index) => <li key={index}>{item}</li>)}
             </ul>

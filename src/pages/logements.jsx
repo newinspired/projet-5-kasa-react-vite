@@ -7,6 +7,7 @@ import { faArrowLeft, faChevronLeft, faChevronRight } from '@fortawesome/free-so
 import Collapse from '../components/collapse';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import '../styles/collapse.scss'
+import Error404 from './error404.jsx'
 
 
 export default function Logement() {
@@ -21,7 +22,9 @@ export default function Logement() {
 
 
   if (!logement) {
-    return <div>Logement introuvable</div>;
+    
+    return  <Error404/>
+    ;
   }
 
   const pictures = logement.pictures;
