@@ -99,12 +99,18 @@ export default function Logement() {
 
       <div className="logement-collapse">
               <Collapse
-                title="Descriptions"
-                content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
+                title="Description"
+                content={logement.description}
               />
               <Collapse
-                title="Equipements"
-                content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
+                title="Équipements"
+                content={
+                  <ul>
+                    {logement.equipments.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                }
               />
       </div>
     </div>
