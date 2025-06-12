@@ -45,17 +45,19 @@ $arrow-size: 40px;
     color: white;
     padding: 6px 40px;
     border-radius: 25px;
-    margin-right: 10px;
     font-size: 14px;
+
+    @media (max-width: 480px) {
+      padding: 6px 20px;
+      gap : 10px;
+    }
+  
   }
 
   @media (max-width: 375px) {
     gap: 10px;
     padding: 0;
 
-    .tag {
-      padding: 6px 20px;
-    }
   }
 }
 
@@ -90,7 +92,7 @@ $arrow-size: 40px;
 
       .logement-cover {
         width: 100%;
-        height: auto;
+        height: 450px;
         object-fit: cover;
         display: block;
       }
@@ -125,6 +127,11 @@ $arrow-size: 40px;
         font-size: 16px;
        
         padding-bottom: 30px;
+
+        @media (max-width: 480px) {
+          display: none;
+        }
+
         
       }
     }
@@ -150,12 +157,21 @@ $arrow-size: 40px;
     .host-name{
       color :$main-color;
       padding-top: 10px;
+
+      @media (max-width: 400px) {
+        margin-left: 15px;
+      }
     }
 
     .host-picture{
       border-radius : 50%;
       width : 64px;
       margin: 0px 0px 38px 15px;
+
+      @media (max-width: 400px) {
+        margin-left: 10px;
+      }
+
     }
   }
 
@@ -163,6 +179,11 @@ $arrow-size: 40px;
     color :$main-color;
     display: flex;
     gap : 8px;
+
+    @media (max-width: 768px) {
+      gap : 2px;
+    }
+
   }
 
   @media (max-width: 768px) {

@@ -13,7 +13,7 @@ export default function Collapse({ title, content }) {
         <span>
           <FontAwesomeIcon
             icon={faChevronDown}
-            className={`collapse-icon ${isOpen ? '' : 'rotate'}`}
+            className={`collapse-icon ${isOpen ? '' : 'rotate'}`} //condition 
           />
         </span>
       </div>
